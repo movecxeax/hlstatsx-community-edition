@@ -293,6 +293,9 @@ INSERT IGNORE INTO `hlstats_Options_Choices` (`keyname`, `value`, `text`, `isDef
 ALTER TABLE `hlstats_Players`
 ADD COLUMN  `blockavatar` int(1) unsigned NOT NULL default '0';
 
+ALTER TABLE `hlstats_Players`
+ADD COLUMN  `hidecity` int(1) unsigned NOT NULL default '0';
+
 INSERT IGNORE INTO `hlstats_Ranks` (`image`, `minKills`, `maxKills`, `rankName`, `game`) VALUES
 ('recruit', 0, 49, 'Recruit', 'bg2'),
 ('private', 50, 99, 'Private', 'bg2'),

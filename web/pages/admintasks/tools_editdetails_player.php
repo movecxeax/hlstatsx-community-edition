@@ -78,7 +78,8 @@ For support and installation notes visit http://www.hlxcommunity.com
 			new PropertyPage_Property("headshots", "Headshots", "text"),
 			new PropertyPage_Property("suicides", "Suicides", "text"),
 			new PropertyPage_Property("hideranking", "Hide Ranking", "select", "0/No;1/Yes;2/Flag as Banned;3/Inactive (Automatic);"),
-			new PropertyPage_Property("blockavatar", "Force Default Avatar Image (note that this overrides images in hlstatsimg/avatars)", "select", "0/No;1/Yes;"),
+			new PropertyPage_Property("blockavatar", "Скрыть аватар", "select", "0/Нет;1/Да;"),
+			new PropertyPage_Property("hidecity", "Скрыть город", "select", "0/Нет;1/Да;"),
 		))
 	));
 	

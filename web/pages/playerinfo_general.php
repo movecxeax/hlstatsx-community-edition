@@ -64,7 +64,7 @@ For support and installation notes visit http://www.hlxcommunity.com
 							$status = 'Unknown';
 							$avatar_full = IMAGE_PATH."/unknown.jpg";
 						
-							if ($coid !== '76561197960265728') {
+							if ($coid !== '76561197960265728' && !$playerdata['blockavatar']) {
 
 								$profileUrl = "https://steamcommunity.com/profiles/$coid?xml=1";
 		
@@ -104,7 +104,7 @@ For support and installation notes visit http://www.hlxcommunity.com
 							if ($playerdata['country'])
 							{
 								echo 'Location: ';
-								if ($playerdata['city']) {
+								if ($playerdata['city'] && !$playerdata['hidecity']) {
 									echo htmlspecialchars($playerdata['city'], ENT_COMPAT) . ', ';
 								}
 								echo '<a href="'.$g_options['scripturl'].'?mode=countryclansinfo&amp;flag='.$playerdata['flag']."&amp;game=$game\">" . $playerdata['country'] . '</a>';

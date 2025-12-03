@@ -4120,6 +4120,7 @@ CREATE TABLE IF NOT EXISTS `hlstats_Players` (
   `kill_streak` int(6) NOT NULL default '0',
   `death_streak` int(6) NOT NULL default '0',
   `blockavatar` int(1) unsigned NOT NULL default '0',
+  `hidecity` int(1) unsigned NOT NULL default '0',
   `activity` int(11) NOT NULL default '100',
   `createdate` int(11) NOT NULL default'0',
   PRIMARY KEY  (`playerId`),
